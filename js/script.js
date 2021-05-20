@@ -23,20 +23,6 @@
 
 'use strict';
 
-/*let number = 5;
-let _number = 5;
-const leftBorderWidth = 1;
-
-number = 10;
-console.log(number);
-
-const obj = {
-    a:50
-}
-obj.a = 10;
-console.log(obj);
-console.log(name);
-var name = 'ivan';*/
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
 
 console.log(`столько: ${numberOfFilms}`);
@@ -58,4 +44,5 @@ const a  = prompt('Один из последних просмотренных �
     personalMovieDB.movies[a] = b;
     personalMovieDB.movies[c] = d;
 
-    console.log(personalMovieDB);
+    console.log(personalMovieDB); 
+
