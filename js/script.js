@@ -46,3 +46,24 @@ const a  = prompt('Один из последних просмотренных �
 
     console.log(personalMovieDB); 
 
+    const soldier = {
+        health: 400,
+        armor: 100,
+        sayHello: function(){
+            console.log("hello");
+        }
+    };
+
+    //const john = {
+    //    health: 100
+    //};
+
+    //john.__proto__ = soldier; //старый способ, джон будет прототипом солдир
+    //console.log(john);
+
+    //Object.setPrototypeOf(john,soldier); //аналогично старому способу. использовать его
+    //john.sayHello();
+
+    //А правильно делать так: изначально объявлять прототипы
+    const  john = Object.create(soldier);
+    john.sayHello();
